@@ -3,6 +3,8 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -11,7 +13,8 @@ footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    margin-top: auto;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer-container {
@@ -21,10 +24,10 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-
 }
 
 .sIcons {
     width: 24px;
     height: auto;
+    margin-right: 10px;
 }
