@@ -1,0 +1,39 @@
+body {
+    overflow: scroll;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.grid-item img {
+    max-width: 100%;
+}
+
+.grid-item:hover {
+    border: #05386b 2px solid;
+    transform: scale(105%);
+}
+
+@media screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
