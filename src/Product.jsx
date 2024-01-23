@@ -8,7 +8,7 @@ function Product() {
     const [selectedExclusive, setSelectedExclusive] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8081/funkos')
+        fetch('https://backend-ecom-t4at.onrender.com/funkos')
             .then(res => {
                 if (!res.ok) {
                     throw new Error('Failed to fetch data');
